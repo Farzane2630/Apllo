@@ -1,0 +1,33 @@
+@font-face {
+    font-family: Yekan-Bach;
+    src: url('../public/Fonts/Yekan Bakh.ttf');
+}
+@font-face {
+    font-family: Montserrat;
+    src: url('../public/Fonts/Montserrat.ttf');
+}
+@font-face {
+    font-family: Ubuntu;
+    src: url('../public/Fonts/Ubuntu.ttf');
+}
+
+
+#root {
+    direction: rtl;
+    display: flex;
+    font-family: Yekan-Bach;
+}
+
+.ubuntu {
+    font-family: Ubuntu; 
+}
+
+.mons{
+    font-family: Montserrat;
+}
+
+#en-version {
+    direction: ltr;
+    display: flex;
+    font-family: Ubuntu;
+}

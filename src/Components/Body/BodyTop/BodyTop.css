@@ -1,0 +1,135 @@
+.body-top {
+    display: flex;
+}
+
+.body-top-right {
+    margin: 0 16px 0 0;
+    position: relative;
+}
+
+.body-top-right button {
+    z-index: 5555555;
+    position: absolute;
+    bottom: 255px;
+    right: 45px;
+    border: none;
+    outline: none;
+    background: unset;
+    cursor: pointer;
+    width: 80px;
+    height: 40px;
+}
+
+.body-top-left {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0 0 0;
+    background: #FFFFFF;
+    border-radius: 24px;
+    margin: 0 16px;
+}
+
+.body-top-left ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 18px;
+    padding: 0 16px;
+}
+
+.body-top-left li {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(225, 235, 239, 0.2);
+    border: 1px solid rgba(225, 235, 239, 0.3);
+    border-radius: 16px;
+}
+
+.pie-chart-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 10px;
+}
+
+.pie-chart-header {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: -0.02em;
+    color: #003459;
+    margin: 30px 25px 0 0;
+    z-index: 5555;
+}
+
+.pie-chart-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px 0 0 0;
+}
+
+.statistics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 10px;
+    background-color: #F1F4F5;
+    width: max-content;
+    grid-gap: 1px;
+}
+
+.statistics > * {
+    background-color: #F9FBFB;
+    padding: 10px 5px;
+}
+
+.pattern {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #11263C;
+}
+
+.guide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.guide button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 8px;
+    border-radius: 12px;
+    outline: none;
+    background-color: unset;
+}
+
+.blue-status-btn {
+    border: 1px solid #2D9CDB;
+    color: #2D9CDB;
+}
+
+.red-status-btn {
+    border: 1px solid #EB5757;
+    color: #EB5757;
+}
+
+.green-status-btn {
+    border: 1px solid #27AE60;
+    color: #27AE60;
+}
+
+.orange-status-btn {
+    border: 1px solid #F2994A;
+    color: #F2994A;
+}

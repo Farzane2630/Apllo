@@ -1,0 +1,276 @@
+.rt-sidebar {
+    background: linear-gradient(271.39deg, rgba(255, 255, 255, 0.609) 7.18%, rgba(255, 255, 255, 0.098) 98.12%), rgba(255, 255, 255, 0.5);
+/* backdrop-filter: blur(10px); */
+    flex: 1;
+    background-image: linear-gradient(271.39deg, rgba(255, 255, 255, 0.609) 7.18%, rgba(255, 255, 255, 0.098) 98.12%), rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 0px 24px 24px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    padding: 25px;
+}
+
+.apollo-logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.insurance-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.taavon-1 {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.taavon-2 {
+    width: 100px;
+    height: 25px;
+    object-fit: contain;
+}
+
+.apollo-2 {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+}
+
+.apollo-1 {
+    width: 95px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    padding: 5px 10px;
+}
+
+.menu-wrapper li {
+    margin-bottom: 10px;
+    position: relative;
+    width: 195px;
+    height: 48px;
+}
+
+.menu-wrapper img {
+    margin: auto 13px;
+}
+
+.menu-wrapper a {
+    text-decoration: none;
+    color: #003459;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.menu-wrapper a.active {
+    padding: 10px;
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background: linear-gradient(-270deg, #8FDFFF 5.73%, #3EBEFF 97.4%);
+    box-shadow: 0px 2px 4px rgba(88, 231, 244, 0.5);
+    border-radius: 12px;
+}
+
+.side-mark.active {
+    width: 3px;
+    height: 29px;
+    background: #67F6FF;
+    box-shadow: 0px 0px 4px rgba(103, 246, 255, 0.6);
+    border-radius: 10px;
+    position: absolute;
+    top: 8px;
+
+}
+
+.upgrade-elem {
+    display: flex;
+    align-items: center;
+    width: 195px;
+    height: 48px;
+    background: rgba(0, 52, 89, 0.05);
+    border: 1px dashed rgba(0, 52, 89, 0.2);
+    border-radius: 12px;
+    margin-bottom: 30px;
+    padding: 5px 30px;
+}
+
+.upgrade-elem a {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    color: #003459;
+}
+
+.upgrade-elem span {
+    margin: 0 15px;
+    text-align: center;
+    font-family: 'Yekan Bakh';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.customize-view {
+    display: flex;
+    column-gap: 15px;
+    justify-content: center;
+}
+
+.customize-view img {
+    Width: 20px;
+    Height: 20px;
+}
+
+.brightness,
+.language {
+    width: 82px;
+    height: 32px;
+    background: rgba(249, 251, 251, 0.4);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 15px;
+    cursor: pointer;
+}
+
+.language span {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    color: #003459;
+}
+
+.toggle-icon {
+    margin: auto 5px;
+    width: 80px;
+    height: 15px;
+    background: #FFFFFF;
+    border: 1.5px solid rgba(0, 52, 89, 0.1);
+    border-radius: 12px;
+    padding: 2px;
+    display: flex;
+    align-items: baseline;
+    object-fit: cover;
+    position: relative;
+}
+
+.toggle-icon img.dark {
+    position: absolute;
+    right: -6%;
+}
+
+.toggle-icon img.light {
+    position: absolute;
+    left: -6%;
+}
+
+.user-info {
+    width: 195px;
+    height: 241px;
+    background: rgba(249, 251, 251, 0.4);
+    border-radius: 24px;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.user-avatar {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.profile-status {
+    position: absolute;
+    bottom: 0%;
+    right: 20%;
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.profile-status.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.user-name {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    color: #003459;
+}
+
+.user-email {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    color: #003459;
+}
+
+.user-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 6px 20px;
+    background: #3EBEFF;
+    border-radius: 12px;
+    width: fit-content;
+    margin: 8px auto;
+
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.user-action-btns {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    align-items: center;
+    margin: 15px auto 30px auto;
+}
+
+.user-action-btns div {
+    padding: 13px;
+    border: 3px solid rgba(0, 52, 89, 0.1);
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+}

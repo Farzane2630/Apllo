@@ -1,0 +1,59 @@
+.left-sidebar.en {
+    margin: 0 24px 0 0;
+}
+
+.top-user.en {
+    display: flex;
+    align-items: left;
+    position: relative;
+}
+
+.top-user-crown.en {
+    position: absolute;
+    top: -12px;
+    left: 15px;
+    width: 44px;
+    height: 23px;
+}
+
+.cup-icon.en {
+    margin-right: 24px;
+}
+
+.top-user-avatar.en {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    margin-right: 16px;
+    position: relative;
+}
+
+.top-user-green-ball.en {
+    position: absolute;
+    left: 45px;
+    bottom: -10px;
+    width: 30px;
+    height: 30px;
+}
+
+.top-user-name.en {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 19px;
+    text-align: left;
+    letter-spacing: -0.01em;
+    color: #003459;
+}
+
+.top-seller-details.en {
+    display: flex;
+    justify-content: left;
+}
+
+.top-seller-details.en span {
+    text-align: left;
+}
+
+.left-top-header.en, .top-seller-details.en span {
+    font-weight: 600;
+}

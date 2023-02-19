@@ -1,0 +1,29 @@
+.activate-btn.en {
+    width: 95px;
+    height: 40px;
+    position: absolute;
+    left: 40px;
+    bottom: 70px;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 12px rgba(81, 192, 221, 0.2);
+    border-radius: 12px;
+    font-weight: 400;
+    color: #003459;
+}
+
+.body-top-right.en {
+    margin: 0 0 0 16px;
+}
+
+.pie-chart-body.en{
+    padding: 20px 15px 20px 0;
+    flex-direction: row-reverse;
+}
+
+.pattern.en {
+    flex-direction: row-reverse;
+}
+
+.pie-chart-header.en span {
+    font-weight: 600;
+}

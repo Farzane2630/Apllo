@@ -1,0 +1,38 @@
+.rt-sidebar.en {
+   border-radius: 24px 0 0 24px;
+   padding: 25px 0 25px 25px; 
+}
+
+.upgrade-elem.en {
+    margin-bottom: 100px;
+}
+
+.user-info.en{
+    padding-bottom: 30px;
+}
+
+.user-info.en span{
+    margin-left: 16px;
+}
+
+.apollo-logo.en{
+    margin-bottom: 40px;
+    margin-top: 100px;
+}
+
+.profile-status.active.en {
+    width: 35px;
+    height: 35px;
+}
+
+.top-user-green-ball.en {
+    position: absolute;
+}
+
+.user-name.en {
+    font-weight: 700;
+}
+
+.user-email.en {
+    font-weight: 500;
+}

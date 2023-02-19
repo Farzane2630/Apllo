@@ -1,0 +1,64 @@
+.body-bottom {
+    height: 330px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    margin: 30px 16px 16px 16px;
+    padding: 24px;
+}
+
+.body-bottom-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px 24px 24px;
+}
+
+.body-bottom-title {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 34px;
+    letter-spacing: -0.02em;
+    color: #003459;
+}
+
+.body-bottom-actions {
+    column-gap: 15px;
+}
+
+.status-guide,
+.body-bottom-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status-guide {
+    column-gap: 15px;
+}
+
+.status-guide button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 8px;
+    border-radius: 12px;
+    outline: none;
+    background-color: unset;
+}
+
+.status-guide div {
+    display: flex;
+    align-items: center !important;
+}
+
+.log {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 10px 16px;
+    gap: 10px;
+    border: 1.5px solid rgba(0, 52, 89, 0.1);
+    border-radius: 12px;
+    cursor: pointer;
+}

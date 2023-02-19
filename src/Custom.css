@@ -1,0 +1,21 @@
+@import url('./cssreset.css');
+
+@font-face {
+    font-family: BYekan;
+    src: url('../public/Fonts/BYekan/BYekan+.ttf');
+}
+
+:root {
+    --white-body: #F1F4F5;
+    --bg-sidebar: linear-gradient(204.42deg, #3EECFF 12.02%, #6167DC 90.25%);
+    --blue: #1998CA;
+}
+
+body {
+    display: flex;
+    background-image: url('../public/Images/back.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 48px 32px;
+}

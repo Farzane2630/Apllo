@@ -1,0 +1,10 @@
+.drop-down-menu.en{
+    border-radius: 12px 0 0 12px;
+    margin: 0 10px 0 0;
+}
+
+.billing.en, .charging-account.en {
+    justify-content: left;
+    column-gap: 14px;
+    font-weight: 400;
+}
