@@ -18,7 +18,7 @@ const CustomTooltip = ({ active, payload, label }) => {
     return (
       <div className="custom-tooltip">
         <p className="label" style={{fontFamily: 'Montserrat', fontWeight: 700}}>{` ${payload[0].value}`}</p>
-        <button className={getIntroOfPage(label)}> {label} </button>
+        <button> {label} </button>
         <p className="desc" style={{fontFamily: 'Ubuntu', fontWeight: 500, color: '#3C3C4399'}}>September 2022</p>
       </div>
     );

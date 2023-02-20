@@ -24,7 +24,7 @@ export default function RightSidebar() {
             </div>
             <div className="menu">
                 <ul className="menu-wrapper">
-                    <li>
+                    <li className='active'>
                         <div className='side-mark active'></div>
                         <a className='active' href="#">
                             <img src="Icons/Work.png" alt="dashboard" />
@@ -59,12 +59,12 @@ export default function RightSidebar() {
             </div>
             <div className="customize-view">
                 <div className="brightness">
-                    <img src="/Icons/dark-mode.png" alt="" />
+                    <img src="/Icons/dark-mode.png" className='dark-mode' alt="" />
                     <div className="toggle-icon" onClick={() => setIsLight(!isLight)}>
                         {/* add '.dark' / '.light/ to toggle */}
                         <img src="/Icons/toggle-ball.png" className={isLight ? 'light' : 'dark'} alt="" />
                     </div>
-                    <img src="/Icons/light-mode.png" alt="" />
+                    <img src="/Icons/light-mode.png" className='light-mode' alt="" />
                 </div>
                 <Link to="/en" className='link'>
                     <div className="language">

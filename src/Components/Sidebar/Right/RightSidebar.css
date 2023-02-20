@@ -1,20 +1,19 @@
 .rt-sidebar {
     background: linear-gradient(271.39deg, rgba(255, 255, 255, 0.609) 7.18%, rgba(255, 255, 255, 0.098) 98.12%), rgba(255, 255, 255, 0.5);
-/* backdrop-filter: blur(10px); */
     flex: 1;
-    background-image: linear-gradient(271.39deg, rgba(255, 255, 255, 0.609) 7.18%, rgba(255, 255, 255, 0.098) 98.12%), rgba(255, 255, 255, 0.5);
+    max-width: 243px;
     backdrop-filter: blur(10px);
     border-radius: 0px 24px 24px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center !important;
-    padding: 25px;
+    padding: 24px;
 }
 
 .apollo-logo {
     display: flex;
     justify-content: center;
-    margin-top: 15px;
+    margin-top: 11px;
     column-gap: 20px;
     align-items: center;
 }
@@ -24,8 +23,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 44px;
+    margin-bottom: 34px;
 }
 
 .taavon-1 {
@@ -56,15 +55,18 @@
 .menu {
     display: flex;
     flex-direction: column;
+    row-gap: 40px;
     justify-content: right;
-    padding: 5px 10px;
 }
 
 .menu-wrapper li {
-    margin-bottom: 10px;
     position: relative;
     width: 195px;
     height: 48px;
+}
+
+li.active {
+    margin-bottom: 26px !important;
 }
 
 .menu-wrapper img {
@@ -90,6 +92,7 @@
     background: linear-gradient(-270deg, #8FDFFF 5.73%, #3EBEFF 97.4%);
     box-shadow: 0px 2px 4px rgba(88, 231, 244, 0.5);
     border-radius: 12px;
+    margin-bottom: 26px !important;
 }
 
 .side-mark.active {
@@ -100,19 +103,16 @@
     border-radius: 10px;
     position: absolute;
     top: 8px;
-
 }
 
 .upgrade-elem {
     display: flex;
     align-items: center;
-    width: 195px;
-    height: 48px;
     background: rgba(0, 52, 89, 0.05);
     border: 1px dashed rgba(0, 52, 89, 0.2);
     border-radius: 12px;
-    margin-bottom: 30px;
-    padding: 5px 30px;
+    margin-bottom: 65px;
+    padding: 14px 16px;
 }
 
 .upgrade-elem a {
@@ -137,21 +137,15 @@
     justify-content: center;
 }
 
-.customize-view img {
-    Width: 20px;
-    Height: 20px;
-}
-
 .brightness,
 .language {
-    width: 82px;
-    height: 32px;
+    width: 70px;
     background: rgba(249, 251, 251, 0.4);
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2px 15px;
+    padding: 6px;
     cursor: pointer;
 }
 
@@ -162,57 +156,75 @@
     color: #003459;
 }
 
+.language img {
+    width: 20px;
+    height: 20px;
+}
+
 .toggle-icon {
     margin: auto 5px;
+    height: 13px;
     width: 80px;
-    height: 15px;
     background: #FFFFFF;
     border: 1.5px solid rgba(0, 52, 89, 0.1);
     border-radius: 12px;
-    padding: 2px;
     display: flex;
-    align-items: baseline;
-    object-fit: cover;
+    align-items: center;
     position: relative;
+}
+
+.light-mode, .dark-mode {
+    width: 20px;
+    height: 20px;
 }
 
 .toggle-icon img.dark {
     position: absolute;
+    top: 3px;
     right: -6%;
+    width: 12px;
+    height: 12px;
 }
 
 .toggle-icon img.light {
     position: absolute;
+    top: 3px;
     left: -6%;
+    width: 12px;
+    height: 12px;
 }
 
 .user-info {
-    width: 195px;
-    height: 241px;
     background: rgba(249, 251, 251, 0.4);
     border-radius: 24px;
-    padding: 25px 50px;
+    padding: 30px 22px 24px 22px;
     display: flex;
-    justify-content: center !important;
+    justify-content: center;
     flex-direction: column;
-    margin-top: 20px;
-    margin-bottom: 15px;
+    margin-top: 16px;
 }
 
 .user-avatar {
     display: flex;
     justify-content: center;
     position: relative;
-    margin-bottom: 15px;
-    margin-top: 30px;
+}
+
+.profile-avatar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
 }
 
 .profile-status {
     position: absolute;
-    bottom: 0%;
-    right: 20%;
-    width: 35px;
-    height: 35px;
+    bottom: 35%;
+    right: 35%;
+    width: 8px;
+    height: 8px;
     object-fit: cover;
     border-radius: 50%;
     z-index: 10;
@@ -236,21 +248,19 @@
 .user-email {
     font-weight: 500;
     font-size: 11px;
+    font-family: Montserrat;
     line-height: 13px;
     text-align: center;
     color: #003459;
+
 }
 
 .user-title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     padding: 6px 20px;
     background: #3EBEFF;
     border-radius: 12px;
     width: fit-content;
-    margin: 8px auto;
-
+    margin: 8px auto 26px auto;
     font-family: 'Ubuntu';
     font-weight: 500;
     font-size: 11px;
@@ -262,15 +272,16 @@
 .user-action-btns {
     display: flex;
     justify-content: center;
-    column-gap: 20px;
+    column-gap: 32px;
     align-items: center;
-    margin: 15px auto 30px auto;
 }
 
 .user-action-btns div {
-    padding: 13px;
-    border: 3px solid rgba(0, 52, 89, 0.1);
-    border-radius: 20px;
-    width: fit-content;
-    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid rgba(0, 52, 89, 0.1);
+    border-radius: 12px;
+    width: 40px;
+    height: 40px;
 }

@@ -1,13 +1,16 @@
 .main-body {
-  flex: 3;
+  flex: 4;
+  max-width: 1133px;
   display: flex;
   flex-direction: column;
   background: #F1F4F5;
   border-radius: 24px 0 0 24px;
+  padding: 0 24px 24px 24px;
 }
 
 .body-components{
   display: flex;
+  column-gap: 16px;
 }
 
 .link {

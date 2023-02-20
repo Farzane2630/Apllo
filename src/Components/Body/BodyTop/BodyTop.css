@@ -1,9 +1,9 @@
 .body-top {
     display: flex;
+    column-gap: 16px;
 }
 
 .body-top-right {
-    margin: 0 16px 0 0;
     position: relative;
 }
 
@@ -51,7 +51,6 @@
 .pie-chart-container {
     display: flex;
     flex-direction: column;
-    padding: 0 0 0 10px;
 }
 
 .pie-chart-header {
@@ -60,7 +59,7 @@
     line-height: 34px;
     letter-spacing: -0.02em;
     color: #003459;
-    margin: 30px 25px 0 0;
+    padding: 24px 16px;
     z-index: 5555;
 }
 
@@ -68,8 +67,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    column-gap: 16px;
     position: relative;
-    padding: 20px 0 0 0;
+    padding: 24px 16px;
 }
 
 .statistics {

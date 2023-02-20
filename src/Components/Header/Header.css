@@ -1,8 +1,9 @@
 .header {
-    padding: 34px 24px;
+    padding: 32px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    column-gap: 43px;
 }
 
 .search-box {
@@ -36,7 +37,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 15px;
+    column-gap: 16px;
 }
 
 .billing {

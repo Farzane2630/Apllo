@@ -4,6 +4,7 @@ import LeftSidebar from "../Components/Sidebar/Left/LeftSidebar";
 import RightSidebar from "../Components/Sidebar/Right/RightSidebar";
 import Footer from  '../Components/Footer/Footer'
 import Body from "../Components/Body/Body";
+import './Body.css'
 
 export default function HomeFa() {
   return (

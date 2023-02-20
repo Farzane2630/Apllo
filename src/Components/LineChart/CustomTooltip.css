@@ -34,3 +34,8 @@
 .custom-tooltip.inProgress {
     border: 1px solid #2D9CDB;
 }
+
+.desc, .label{
+    padding: 10px 5px;
+    text-align: center;
+}

@@ -11,7 +11,7 @@ export default function EnBodyTop() {
                     <button className="activate-btn en ubuntu"> Activate it </button>
                 </a>
             </div>
-            <div className="body-top-left">
+            <div className="body-top-left en">
                 <ul className='ubuntu'>
                     <li><a href="#">
                         <img src="/Icons/folder-2.png" alt="" />

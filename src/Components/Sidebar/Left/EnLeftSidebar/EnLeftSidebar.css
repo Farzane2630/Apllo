@@ -1,6 +1,6 @@
 .rt-sidebar.en {
    border-radius: 24px 0 0 24px;
-   padding: 25px 0 25px 25px; 
+   padding: 24px; 
 }
 
 .upgrade-elem.en {
@@ -21,8 +21,8 @@
 }
 
 .profile-status.active.en {
-    width: 35px;
-    height: 35px;
+    width: 8px;
+    height: 8px;
 }
 
 .top-user-green-ball.en {

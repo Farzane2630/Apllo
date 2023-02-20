@@ -11,12 +11,17 @@
     color: #003459;
 }
 
-.body-top-right.en {
-    margin: 0 0 0 16px;
+.body-top-left.en{
+    padding: 16px;
+    margin: 0;
+}
+
+.body-top-left.en ul{
+    padding: 0;
 }
 
 .pie-chart-body.en{
-    padding: 20px 15px 20px 0;
+    padding: 24px 16px;
     flex-direction: row-reverse;
 }
 

@@ -76,7 +76,7 @@ export default class EnLineChart extends PureComponent {
             <CartesianGrid strokeLinejoin="3 3" stroke='rgba(236, 233, 241, 0.5)' />
             <XAxis dataKey="name" />
             <YAxis type="number" domain={[0, 500]}/>
-            <Tooltip content={<CustomTooltip />}  />
+            <Tooltip content={<CustomTooltip />} trigger="hover" />
             <Line type="monotone" dataKey="inProgress" stroke="rgba(92, 231, 123, 0.8)"  dot={false} strokeWidth={5} />
             <Line type="monotone" dataKey="Done" stroke="rgba(92, 185, 231, 0.8)"  dot={false} strokeWidth={5} />
             <Line type="monotone" dataKey="Rejected" stroke="rgba(235, 87, 87, 0.8)"  dot={false} strokeWidth={5} /> 
