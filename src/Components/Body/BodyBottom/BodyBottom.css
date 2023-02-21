@@ -1,9 +1,12 @@
 .body-bottom {
-    height: 330px;
     background: #FFFFFF;
     border-radius: 24px;
-    margin: 30px 16px 16px 16px;
-    padding: 24px;
+    margin: 0;
+    padding: 24px 24px 0 24px;
+}
+.body-bottom-chart{
+    height: fit-content;
+    padding-bottom: 26px;
 }
 
 .body-bottom-header {

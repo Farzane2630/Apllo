@@ -1,18 +1,13 @@
 .left-sidebar {
     display: flex;
-    justify-content:space-around;
     flex-direction: column;
-    left: 0;
     row-gap: 16px;
-    width: fit-content;
 }
 
 .left-sidebar-top {
-    width: fit-content;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 376px;
     background: #FFFFFF;
     border-radius: 24px;
     padding: 24px 16px 16px 16px;
@@ -24,14 +19,16 @@
     line-height: 34px;
     letter-spacing: -0.02em;
     color: #003459;
-    margin-bottom: 20px;
+    padding: 0 8px 16px 0;
 }
 
 .top-users-container {
     display: flex;
     flex-direction: column;
     row-gap: 8px;
-    row-gap: 16px;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #F9FBFB;
+    border-radius: 16px;
+    width: fit-content;
 }
 
 .top-user {
@@ -39,52 +36,55 @@
     align-items: center;
     position: relative;
     cursor: pointer;
+    column-gap: 16px;
+    width: 195px;
+    height: 64px;
 }
 
 .top-user-crown {
     position: absolute;
-    top: -12px;
+    top: -8px;
     right: 8px;
     width: 44px;
     height: 23px;
+    z-index: 7574636;
 }
 
 .top-user-avatar {
     width: 48px;
     height: 48px;
     object-fit: cover;
-    margin-left: 16px;
     position: relative;
 }
 
 .top-user-detail {
     display: flex;
     flex-direction: column;
-    column-gap: 35px;
     justify-content: right;
+    width: 119px;
 }
 
 .top-user-name {
     font-weight: 700;
     font-size: 12px;
-    line-height: 19px;
+    line-height: 15px;
     text-align: right;
     letter-spacing: -0.01em;
     color: #003459;
 }
 
 .top-user-score-box {
-    column-gap: 20px;
+    width: 119px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.top-user-score-number,
-.top-user-score-day {
+.score-number,
+.score-day {
     font-weight: 400;
     font-size: 10px;
-    line-height: 15px;
+    line-height: 11px;
     text-align: right;
     color: #003459;
 }
@@ -92,33 +92,31 @@
 .top-seller-challenge {
     display: flex;
     align-items: center;
-    width: 195px;
-    height: 50px;
+    justify-content: start;
+    column-gap: 16px;
     background: #F9FBFB;
     border: 1px dashed #BDBDBD;
     border-radius: 12px;
-    padding: 10px 8px;
-    margin-top: 15px;
+    padding: 16px;
+    margin-top: 16px;
     cursor: pointer;
 }
 
 .cup-icon {
     width: 40px;
-    height: 36px;
+    height: 38px;
 }
 
 .top-seller-details {
     display: flex;
     justify-content: right;
     flex-direction: column;
-    margin-right: 20px;
-    row-gap: normal;
 }
 
 .top-seller-details span {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 12px;
-    line-height: 19px;
+    line-height: 15px;
     text-align: right;
     letter-spacing: -0.01em;
     color: #003459;
@@ -127,25 +125,36 @@
 .more-info {
     font-weight: 400;
     font-size: 10px;
-    line-height: 15px;
+    line-height: 11px;
     color: #003459;
 }
 
 .top-user-hr {
     border: 1px solid #F1F4F5;
-    width: 100%;
+    width: inherit;
     height: 0px;
 }
 
 .top-user-green-ball {
     position: absolute;
-    right: -11px;
-    bottom: -8px;
+    width: 8px;
+    height: 8px;
+    right: 4px;
+    bottom: 10px;
 }
 
 .left-sidebar-bottom {
     display: flex;
     justify-content: center;
-    margin: 45px 0 45px 20px;
-    object-fit: cover;
+    cursor: pointer;
+}
+
+.left-sidebar-bottom img {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 270px;
+    height: 365px;
+    object-fit: contain;
+    margin: 0%;
 }

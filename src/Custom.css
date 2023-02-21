@@ -1,8 +1,8 @@
 @import url('./cssreset.css');
 
 @font-face {
-    font-family: BYekan;
-    src: url('../public/Fonts/BYekan/BYekan+.ttf');
+    font-family: Yekan-Bach;
+    src: url('../public/Fonts/Yekan\ Bakh.ttf');
 }
 
 :root {
@@ -18,4 +18,7 @@ body {
     background-position: center;
     background-size: cover;
     padding: 48px 32px;
+    font-family: "Yekan-Bach";
+    justify-content: center;
+    width: calc(100% - 64px);
 }

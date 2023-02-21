@@ -34,7 +34,7 @@ export default function BodyTop() {
         <div className="pie-chart-container">
           <div className="pie-chart-header">
             <span>پیش‌نمایش</span>
-            <img src="" alt="" />
+            <img src="/Icons/three-dots.png" alt="see more" />
           </div>
           <div className="pie-chart-body">
             <StatusPieChart />

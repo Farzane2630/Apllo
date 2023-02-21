@@ -4,7 +4,7 @@ import './EnRightSidebar.css'
 export default function EnRightSidebar() {
   return (
     <div className='left-sidebar en'>
-      <div className="left-sidebar-top">
+      <div className="left-sidebar-top en">
         <div className="left-top-header en mons">
           Challengers
         </div>
@@ -15,7 +15,7 @@ export default function EnRightSidebar() {
             <img src="/Icons/green-ball.png" className='top-user-green-ball en' alt="" />
             <div className="top-user-detail">
               <div className="top-user-name en mons"> Marian Brossimova</div>
-              <div className="top-user-score-box">
+              <div className="top-user-score-box en">
                 <div className="score-number">
                   Total: 21080
                 </div>
@@ -66,7 +66,7 @@ export default function EnRightSidebar() {
           </div>
         </div>
       </div>
-      <div className="left-sidebar-bottom">
+      <div className="left-sidebar-bottom en">
         <img src="/Images/cover.png" alt="" />
       </div>
     </div>

@@ -34,7 +34,7 @@ export default function EnBodyTop() {
                 <div className="pie-chart-container">
                     <div className="pie-chart-header en">
                         <span className='mons'>Overview</span>
-                        <img src="" alt="" />
+                        <img src="/Icons/three-dots.png" alt="see more" />
                     </div>
                     <div className="pie-chart-body en">
                         <EnStatusPieChart />

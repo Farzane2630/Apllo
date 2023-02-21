@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   LineChart,
   Line,
@@ -8,85 +8,122 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from 'recharts';
-const data = [
-  {
-    name: '',
-    uv: 200,
-    pv: 100,
-    xv: 345,
-    amt: 2400
-  },
-  {
-    name: '5',
-    uv: 125,
-    pv: 98,
-    xv: 284,
-    amt: 2210
-  },
-  {
-    name: '10',
-    uv: 200,
-    pv: 300,
-    xv: 200,
-    amt: 2290,
-  },
-  {
-    name: '15',
-    uv: 280,
-    pv: 248,
-    xv: 100,
-    amt: 2000,
-  },
-  {
-    name: '20',
-    uv: 390,
-    pv: 200,
-    xv: 400,
-    amt: 2181,
-  },
-  {
-    name: '25',
-    uv: 100,
-    pv: 250,
-    xv: 100,
-    amt: 2500,
-  },
-  {
-    name: '30',
-    uv: 315,
-    pv: 150,
-    xv: 300,
-    amt: 2100
-  },
-];  
 
-export default class Example extends PureComponent {
-  render() {
-    return (
-        <div style={{ width: '100%' }}>
-        <ResponsiveContainer width="100%" height={200}>
-          <LineChart
-            width={500}
-            height={200}
-            data={data}
-            syncId="anyId"
-            margin={{
-              top: 10,
-              right: 30,
-              left: 0,
-              bottom: 0,
-            }}
-          >
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="name" />
-            <YAxis type="number" domain={[20, 300]}/>
-            <Tooltip TValue=""  />
-            <Line type="monotone" dataKey="pv" stroke="rgba(92, 231, 123, 0.8)"  dot={false} strokeWidth={5} />
-            <Line type="monotone" dataKey="uv" stroke="rgba(92, 185, 231, 0.8)"  dot={false} strokeWidth={5} />
-            <Line type="monotone" dataKey="xv" stroke="rgba(235, 87, 87, 0.8)"  dot={false} strokeWidth={5} /> 
-          </LineChart>
-        </ResponsiveContainer>
-      </div>
-    );
+import CustomTooltip from './CustomTooltip'
+
+export default function Example() {
+
+  const data = [
+    {
+      x: '1',
+      Done: '30',
+      inProgress: '110',
+      Rejected: '50'
+    },
+    {
+      x: '5',
+      Done: '100',
+      inProgress: '90',
+      Rejected: '15'
+    },
+    {
+      x: '10',
+      Done: '40',
+      inProgress: '200',
+      Rejected: '30'
+    },
+    {
+      x: '15',
+      Done: '220',
+      inProgress: '150',
+      Rejected: ''
+    },
+    {
+      x: '20',
+      Done: '200',
+      inProgress: '30',
+      Rejected: '40'
+    },
+    {
+      x: '25',
+      Done: '400',
+      inProgress: '100',
+      Rejected: '15'
+    },
+    {
+      x: '30',
+      Done: '250',
+      inProgress: '25',
+      Rejected: '70'
+    }
+  ]
+
+  const [lineLabel, setLineLabel] = useState("")
+  const [btnColor, setBtnColor] = useState('')
+  const [index, setIndex] = useState('')
+  let [targetVal, setTargetVal] = useState(null)
+  // let progressAxis
+  // let doneAxis
+  // let rejectedAxis
+
+  // useEffect(() => {
+  const progressAxis = (e) => {
+    setBtnColor("inProgress")
+    setLineLabel("در حال بررسی")
+    setTargetVal(e.points[index].payload.inProgress)
   }
+  const doneAxis = (e) => {
+    setBtnColor("Done")
+    setLineLabel("تائید شده")
+    setTargetVal(e.points[index].payload.Done)
+  }
+  const rejectedAxis = (e) => {
+    setBtnColor("Rejected")
+    setLineLabel("رد شده")
+    setTargetVal(e.points[index].payload.Rejected)
+  }
+
+  const mouseHandlr = (e) => {
+    if (e.isTooltipActive) {
+      setIndex(e.activeTooltipIndex);
+    }
+  }
+  // }, [lineLabel, btnColor])
+
+
+
+  return (
+    <div style={{ width: "inherit" }}>
+      <ResponsiveContainer width="100%" height={250}>
+        <LineChart
+          onMouseMove={mouseHandlr}
+          width={500}
+          height={200}
+          data={data}
+          syncId="anyId"
+          margin={{
+            top: 30,
+            right: 30,
+            left: 0,
+            bottom: 0,
+          }}
+        >
+          <CartesianGrid strokeLinejoin="3 3" stroke='rgba(236, 233, 241, 0.5)' />
+          <XAxis dataKey="x" />
+          <YAxis type="number" domain={[0, 500]} />
+          <Tooltip offset="0"
+            content={<CustomTooltip
+              btnColor={btnColor}
+              lineTitle={lineLabel}
+              targetValue={!targetVal ? 0 : targetVal}
+            />}
+            trigger="hover" />
+          <Line onMouseMove={progressAxis} type="monotone" index="x" dataKey="inProgress" stroke="rgba(92, 231, 123, 0.8)" dot={false} strokeWidth={5} />
+          <Line onMouseMove={doneAxis} type="monotone" dataKey="Done" stroke="rgba(92, 185, 231, 0.8)" dot={false} strokeWidth={5} />
+          <Line onMouseMove={rejectedAxis} type="monotone" dataKey="Rejected" stroke="rgba(235, 87, 87, 0.8)" dot={false} strokeWidth={5} />
+        </LineChart>
+      </ResponsiveContainer>
+    </div>
+  );
+
 }

@@ -58,16 +58,17 @@ export default function LeftSidebar() {
             </div>
           </div>
         </div>
-<div className="top-seller-challenge">
-  <img src="/Icons/cup-icon.png" alt="" className="cup-icon" />
-  <div className="top-seller-details">
-    <span>چالش بهترین فروشنده</span>
-    <div className="more-info">مشاهده اطلاعات بیشتر .. </div>
-  </div>
-</div>
+        <div className="top-seller-challenge">
+          <img src="/Icons/cup-icon.png" alt="" className="cup-icon" />
+          <div className="top-seller-details">
+            <span>چالش بهترین فروشنده</span>
+            <div className="more-info">مشاهده اطلاعات بیشتر .. </div>
+          </div>
+        </div>
       </div>
-      <div className="left-sidebar-bottom">
-        <img src="/Images/cover.png" alt="" />
+
+      <div className='left-sidebar-bottom'>
+        <img src="/Images/cover.png" className='cover-baner' alt="" />
       </div>
     </div>
   )

@@ -29,7 +29,7 @@ export default function StatusPieChart() {
       >
         <Label
          width={30} position="center"
-         content={<CustomLabel value2="۸۹٫۳"  value1="تعداد کل" value3="هزار" font2="Yekan-Bakh" font1="Yekan-Bakh" font3="Yekan-Bakh" />}
+         content={<CustomLabel value2="۸۹/۳"  value1="تعداد کل" value3="هزار" font2="Yekan-Bakh" font1="Yekan-Bakh" font3="Yekan-Bakh" />}
          />
         {data.map((entry, index) => (
           <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />

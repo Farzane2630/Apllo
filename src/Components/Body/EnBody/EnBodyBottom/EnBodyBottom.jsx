@@ -1,5 +1,5 @@
 import React from 'react'
-import EnLineChart from '../../../LineChart/EnLineChart'
+import LineChart from '../../../LineChart/LineChart'
 
 export default function EnBodyBottom() {
   return (
@@ -31,7 +31,7 @@ export default function EnBodyBottom() {
       </div>
 
       <div className="body-bottom-chart">  
-      <EnLineChart />  
+      <LineChart />  
       </div>
     </div>
   )
