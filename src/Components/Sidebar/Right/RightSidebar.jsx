@@ -1,17 +1,11 @@
 import React, { useState } from 'react'
 import './RightSidebar.css'
 import {Link} from 'react-router-dom'
+import {ToggleSimpleUsageShowcase} from '../../../UI/ToggleBtn'
 
 export default function RightSidebar() {
-    // const [menuItem, setMenuItems] = useState([
-    //     {id:1, title: 'داشبورد', img: "Icons/Work.png", alt: 'dashboard'},
-    //     {id:2, title: 'مدیریت درخواست ها', img: "Icons/Folder.png", alt: 'requests management'},
-    //     {id:3, title: 'مدیریت کاربران', img: "Icons/2-User.png", alt: 'users management'},
-    //     {id:4, title: 'مرکز پیام', img: "Icons/envelope.png", alt: 'message center'},
-    // ])
     const [isLight, setIsLight] = useState(true)
-    const [isMenuActive, setisMenuActive] = useState(false)
-    const [farsi, setFarsi] = useState(true)
+
     return (
         <div className='rt-sidebar' style={{ backgroundIma: ' linear-gradient(271.39deg, rgba(255, 255, 255, 0.609) 7.18%, rgba(255, 255, 255, 0.098) 98.12%), rgba(255, 255, 255, 0.5)' }}>
             <div className="apollo-logo">
@@ -63,6 +57,8 @@ export default function RightSidebar() {
                     <div className="toggle-icon" onClick={() => setIsLight(!isLight)}>
                         {/* add '.dark' / '.light/ to toggle */}
                         <img src="/Icons/toggle-ball.png" className={isLight ? 'light' : 'dark'} alt="" />
+                    
+                    {/* <ToggleSimpleUsageShowcase /> */}
                     </div>
                     <img src="/Icons/light-mode.png" className='light-mode' alt="" />
                 </div>

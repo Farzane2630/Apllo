@@ -8,6 +8,7 @@
     flex-direction: column;
     justify-content: center !important;
     padding: 24px;
+    height: calc(100% - 48px);
 }
 
 .apollo-logo {
@@ -221,8 +222,8 @@ li.active {
 
 .profile-status {
     position: absolute;
-    bottom: 35%;
-    right: 35%;
+    bottom: 32%;
+    right: 38%;
     width: 8px;
     height: 8px;
     object-fit: cover;

@@ -16,6 +16,7 @@
     direction: rtl;
     display: flex;
     font-family: Yekan-Bach;
+    width: 100%;
 }
 
 .ubuntu {

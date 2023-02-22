@@ -8,8 +8,8 @@ import EnBody from '../Components/Body/EnBody/EnBody'
 import '../App.css'
 
 export default function HomeEn() {
-  return ReactDOM.createPortal(
-    <>
+  return(
+    <div className='home-en'>
       <EnLeftSidebar />
       <div className="main-body en">
         <EnHeader />
@@ -19,7 +19,6 @@ export default function HomeEn() {
         </div>
         <EnFooter />
       </div>
-    </>,
-    document.getElementById('en-version')
+    </div>
   )
 }

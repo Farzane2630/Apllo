@@ -1,14 +1,17 @@
 import "./App.css";
 import routes from "./routes";
-import { Router, useRoutes } from "react-router-dom";
-
-function App() {
-  let router = useRoutes(routes);
-
+import { useRoutes } from "react-router-dom";
+import * as eva from "@eva-design/eva";
+import { ApplicationProvider, Layout } from "@ui-kitten/components";
+    
+    function App() {
+  const router = useRoutes(routes);
   return (
-    <>
-      {router}
-    </>
+    <ApplicationProvider {...eva} theme={eva.light}>
+    <Layout style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: 'row', backgroundColor: 'unset'}}>
+    {router} 
+  </Layout>
+    </ApplicationProvider>
   );
 }
 
