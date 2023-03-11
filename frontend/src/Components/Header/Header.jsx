@@ -1,5 +1,6 @@
 import React from 'react'
 import './Header.css'
+// import {DownOutlined} from '@ant-design/icons'
 
 export default function Header() {
 
@@ -13,6 +14,7 @@ export default function Header() {
             </div>
             <div className="header-left-side">
                 <div className="billing">
+                {/* <DownOutlined className='drop-down-arrow' /> */}
                     <img src="/Icons/down-drop.png" alt="" />
                     <span>اعتبار موجود</span>
                     ۱۳۰٫۰۰۰
